@@ -87,7 +87,7 @@ const App: React.FC = () => {
 
       {error && <p className="text-red-500 text-center mb-4">{error}</p>}
 
-      {weatherData && (
+      {!loading && weatherData && (
         <div className="w-full max-w-lg mx-auto p-8 bg-white rounded-lg shadow-2xl">
           <h2 className="text-3xl font-semibold text-center text-gray-800 mb-4">
             {weatherData.location.name}, {weatherData.location.country}
